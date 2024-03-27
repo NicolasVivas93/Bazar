@@ -34,10 +34,11 @@ public class Venta {
     public Venta() {
     }
 
-    public Venta(Long cod_venta, LocalDate fecha_venta, Double totalVta, List<Producto> listaProductos) {
+    public Venta(Long cod_venta, LocalDate fecha_venta, Double totalVta, List<Producto> listaProductos, Cliente cliente) {
         this.cod_venta = cod_venta;
         this.fecha_venta = fecha_venta;
         this.totalVta = totalVta;
         this.listaProductos = listaProductos;
+        this.cliente = cliente;
     }
 }
